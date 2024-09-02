@@ -1,25 +1,3 @@
-# pwm-led-control
-
-
-
-## Getting started
-python3 pwmLed.py
-
-## PWM - LED Control
-
-### 1) Selected PIN Number : 2 (GPIO 115)
-
-<img src="images/pinMap.png" alt="alt text" width="600" height="400">
-
-<img src="images/raspPinMap.png" alt="alt text" width="600" height="400">
-
-### 2) Use Breadboard to Connect LED to Board PIN
-
-<img src="images/pwmLed.png" alt="alt text" width="600" height="500">
-
-## Code
-
-```
 import time
 
 PWM_CHIP_PATH = '/sys/class/pwm/pwmchip0/'
@@ -67,7 +45,3 @@ if __name__ == '__main__':
         disable_pwm_output(PWM_PIN)
         disable_pwm(PWM_PIN)
         print("\nPWM control stopped.")
-```
-
-## Result
-![Alt text](images/pwmLed.mp4)
